@@ -1,0 +1,15 @@
+.LocationStars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.LocationStar {
+    width: 36px;
+    text-align: center;
+}
+
+.LocationStar img {
+    height: 75%;
+}

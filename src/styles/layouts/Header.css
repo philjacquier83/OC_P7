@@ -1,0 +1,49 @@
+.BlocHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width:100%;
+    max-width:1280px;
+}
+
+.BlocMenus, Link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: tomato;
+}
+
+.Menus {
+    padding: 10px 20px;
+    text-align: center;
+    color: tomato;
+    font-size: 24px;
+}
+
+.LogoHeader {
+    text-align:left;
+    padding: 10px 20px;
+    flex: 1;
+    align-items: center;
+}
+
+.menuSelected {
+    text-decoration: underline;
+    color: tomato;
+}
+
+.menuNotSelected {
+    color: tomato;
+}
+
+a {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: tomato;
+}

@@ -1,0 +1,69 @@
+.LocationMainBloc {
+    display: flex;
+    flex-direction: column;
+}
+
+.LocationInformation {
+    display: flex;
+    color: tomato;
+    margin: 10px 0 0 0;
+}
+
+.LocationDescription {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+    justify-content: center;
+}
+
+.LocationName {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.Location {
+    justify-content: center;
+}
+
+.LocationTagsRating {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+}
+
+.LocationTags {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.LocationHost {
+    display: flex;
+    align-items: center;
+}
+
+.LocationHostName {
+    flex: 1;
+    padding: 10px;
+    width: 120px;
+    text-align: right;
+}
+
+.LocationHostPic {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+}
+
+.NoHostPic {
+    width: 64px;
+    height: 64px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 50%;
+}
+
+.LocationRating, .LocationTags {
+    height: 50px;
+}

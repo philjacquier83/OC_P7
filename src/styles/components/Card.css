@@ -1,0 +1,48 @@
+.CardBlock {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    overflow: hidden;
+    margin: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px #aeaeae;
+    opacity: 0.8;
+    cursor: auto;
+}
+
+.CardBlock:hover {
+    box-shadow: 2px 2px 2px rgba(#aeaeae,0.5);
+    opacity: 1;
+    cursor: pointer;
+    outline: 3px solid tomato;
+}
+
+.CardBlock::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 100%);
+    pointer-events: none;
+}
+
+.CardImg {
+    height: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+
+.TitreLocation {
+    position: absolute;
+    width: 70%;
+    top: 80%;
+    left: 10%;
+    color: white;
+    text-align: left;
+    z-index: 1;
+    font-weight: bolder;
+}

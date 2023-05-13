@@ -1,0 +1,65 @@
+.BlocImageAccueil {
+    position: relative;
+    height: 20vh;
+    min-width: 100%;
+    max-width: 1280px;
+    border-radius: 25px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    margin-top: 40px;
+    background-image: url('../../assets/HomeImage.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.BlocImageAccueil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.BlocImageAbout {
+    position: relative;
+    height: 20vh;
+    min-width: 100%;
+    max-width: 1280px;
+    border-radius: 25px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    margin-top: 40px;
+    background-image: url('../../assets/AboutImage.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.BlocImageAbout::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.TextHomeImage {
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 48px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bolder;
+    z-index: 1;
+}
