@@ -1,16 +1,16 @@
-import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import Annonces from '../assets/logements.json'
 
 function useCarrousel() {
-    const { id } = useParams()
-    const [ carrousel, nextCarrousel ] = useState([0])
+    const [ carrousel, nextCarrousel ] = useState([1])
 
     useEffect(() => {
-        const a = Annonces.find((elem) => elem.id === id)
-        nextCarrousel(a)
-    }, [id])
-    return annonce
+        console.log("Numéro image : ", carrousel)
+    }, [carrousel])
+
+    const handleClick = () => {
+        nextCarrousel(carrousel + 1)
+    }
+    return carrousel
 }
 
-export default useLocation
+export default useCarrousel

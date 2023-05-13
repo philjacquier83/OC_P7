@@ -1,7 +1,7 @@
-function Carrousel({annonce}) {
+function Carrousel({annonce, pic}) {
     return (
         <div className="LocationBannerContainer">
-            <img src={annonce.pictures[0]} alt={annonce.title} className="LocationBanner" />
+            <img src={annonce.pictures[pic]} alt={annonce.title} className="LocationBanner" />
         </div>
     )
 }

@@ -2,23 +2,28 @@ import '../styles/layouts/LocationBanner.css'
 import Carrousel from '../components/Carrousel'
 import ArrowLeft from '../assets/ArrowLeft.svg'
 import ArrowRight from '../assets/ArrowRight.svg'
+import useCarrousel from '../hooks/useCarrousel'
+import { useEffect, useState } from 'react'
 
 function LocationBanner({annonce}) {
-    
     const TotalPics = annonce.pictures.length
+    const [ carrousel, nextCarrousel ] = useState([1])
+    useEffect(() => {
+        console.log("Numéro image : ", carrousel)
+    }, [carrousel])
     
     return (
         <div className="Carrousel">
-            <Carrousel annonce={annonce} />
+            <Carrousel annonce={annonce} pic={(parseInt(carrousel, 10) - 1)} />
             <div className="CarrouselNavigation">
-                <div className="Arrow" onClick="PreviousImage()">
+                <div className="Arrow" onClick={() => nextCarrousel( (parseInt(carrousel, 10) - 1) < 1  ? TotalPics : (parseInt(carrousel, 10) - 1) )}>
                     <img src={ ArrowLeft } alt="Previous Image" />
                 </div>
                 
                 <div class="CarrouselCentral">
-                    <span className="PicCount">1/{ TotalPics }</span>
+                    <span className="PicCount">{ carrousel }/{ TotalPics }</span>
                 </div>
-                <div className="Arrow" onClick="NextImage()">
+                <div className="Arrow" onClick={() => nextCarrousel( (parseInt(carrousel, 10) + 1) > TotalPics  ? 1 : (parseInt(carrousel, 10) + 1) )}>
                     <img src={ ArrowRight } alt="Next Image" />
                 </div>
             </div>
