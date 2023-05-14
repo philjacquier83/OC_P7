@@ -2,7 +2,7 @@ import '../styles/layouts/LocationBanner.css'
 import Carrousel from '../components/Carrousel'
 import ArrowLeft from '../assets/ArrowLeft.svg'
 import ArrowRight from '../assets/ArrowRight.svg'
-import useCarrousel from '../hooks/useCarrousel'
+//import useCarrousel from '../hooks/useCarrousel'
 import { useEffect, useState } from 'react'
 
 function LocationBanner({annonce}) {

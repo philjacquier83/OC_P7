@@ -2,6 +2,7 @@
     position: relative;
     height: 413px;
     width: 100%;
+    border-radius: 20px;
     overflow: hidden;
     margin: 20px 0 0 0;
 }
@@ -10,8 +11,8 @@
     position: relative;
     height: 413px;
     width: 100%;
-    border-radius: 20px;
     overflow: hidden;
+    animation: NextPic 2s forwards ease-in-out;
 }
 
 .LocationBannerContainer::before {
@@ -65,4 +66,12 @@
     background-color: rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
     font-weight: bolder;
+}
+
+.PreviousPic {
+    animation: PrevPic 2s forwards ease-in-out;
+}
+
+.NextPic {
+    animation: NextPic 2s forwards ease-in-out;
 }

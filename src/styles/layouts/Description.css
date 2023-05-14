@@ -1,3 +1,15 @@
+@keyframes AnimPic {
+    0% {
+        transform: scale(0.6);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .LocationMainBloc {
     display: flex;
     flex-direction: column;
@@ -55,6 +67,7 @@
     width: 64px;
     height: 64px;
     padding: 10px;
+    animation: AnimPic 0.8s forwards ease-in-out;
 }
 
 .NoHostPic {

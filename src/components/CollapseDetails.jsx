@@ -1,11 +1,11 @@
 import '../styles/components/Collapse.css'
 import Engagements from '../assets/engagements.json'
 
-function CollapseDetails({ collapse, annonce }) {
+function CollapseDetails({ isOpen, collapse, annonce }) {
     
     return (
         
-        <div className={ ( collapse === 'Description' || collapse ==='Equipements' ) ? "CollapseDetails" : "CollapseDetailsAbout" }>
+        <div className={ ( collapse === 'Description' || collapse ==='Equipements' ) ? ( isOpen ? "CollapseDetailsOpen AnimationBlocCollapseClose" : "CollapseDetailsClose AnimationBlocCollapseOpen" ) : ( isOpen ? "CollapseDetailsOpen AnimationBlocCollapseClose" : "CollapseDetailsClose AnimationBlocCollapseOpen" ) }>
             { annonce ? ( 
                 collapse === 'Description' ? 
                     annonce.description
