@@ -1,10 +1,11 @@
 import '../styles/components/Collapse.css'
+import Engagements from '../assets/engagements.json'
 
 function CollapseDetails({ collapse, annonce }) {
     
     return (
         
-        <div className="CollapseDetails">
+        <div className={ ( collapse === 'Description' || collapse ==='Equipements' ) ? "CollapseDetails" : "CollapseDetailsAbout" }>
             { annonce ? ( 
                 collapse === 'Description' ? 
                     annonce.description
@@ -16,7 +17,7 @@ function CollapseDetails({ collapse, annonce }) {
                     )
                 )
                 :
-                "Blablabla"
+                ( Engagements.map((Engagement, index) => Engagement.title === collapse && <div key={`${Engagement.title}-${index}`}> { Engagement.text } </div> ))
             }
         </div>
     )

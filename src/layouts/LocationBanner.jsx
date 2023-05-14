@@ -14,18 +14,25 @@ function LocationBanner({annonce}) {
     
     return (
         <div className="Carrousel">
+            
             <Carrousel annonce={annonce} pic={(parseInt(carrousel, 10) - 1)} />
+            
             <div className="CarrouselNavigation">
-                <div className="Arrow" onClick={() => nextCarrousel( (parseInt(carrousel, 10) - 1) < 1  ? TotalPics : (parseInt(carrousel, 10) - 1) )}>
-                    <img src={ ArrowLeft } alt="Previous Image" />
-                </div>
+                { (TotalPics > 1) && 
+                    <div className="Arrow" onClick={() => nextCarrousel( (parseInt(carrousel, 10) - 1) < 1 ? TotalPics : (parseInt(carrousel, 10) - 1) )}>
+                        <img src={ ArrowLeft } alt="Previous Image" />
+                    </div>
+                }
                 
                 <div class="CarrouselCentral">
                     <span className="PicCount">{ carrousel }/{ TotalPics }</span>
                 </div>
-                <div className="Arrow" onClick={() => nextCarrousel( (parseInt(carrousel, 10) + 1) > TotalPics  ? 1 : (parseInt(carrousel, 10) + 1) )}>
-                    <img src={ ArrowRight } alt="Next Image" />
-                </div>
+                
+                { (TotalPics > 1) && 
+                    <div className="Arrow" onClick={() => nextCarrousel( (parseInt(carrousel, 10) + 1) > TotalPics ? 1 : (parseInt(carrousel, 10) + 1) )}>
+                        <img src={ ArrowRight } alt="Next Image" />
+                    </div>
+                }
             </div>
         </div>
     )

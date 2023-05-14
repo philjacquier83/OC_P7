@@ -7,7 +7,7 @@ function Collapse({ collapse, annonce }) {
     const ArrowPosition = ArrowOpen
     
     return (
-        <div className="CollapseContainer">
+        <div className={ collapse === 'Description' || collapse === 'Equipements' ? "CollapseContainer" : "CollapseContainerAbout" } >
             <div className="CollapseTitle">
                 <div className="CollapseText">
                     {collapse}
