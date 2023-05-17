@@ -21,10 +21,12 @@ function useLocation() {
     })
 
     useEffect(() => {
-        const a = Annonces.find((elem) => elem.id === id)
+        const a = Annonces.find((elem) => elem.id === id)		
         setAnnonce(a)
     }, [id])
-    return annonce
+	
+	return annonce
+	
 }
 
 export default useLocation

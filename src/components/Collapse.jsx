@@ -6,7 +6,6 @@ import CollapseDetails from '../components/CollapseDetails'
 
 function Collapse({ collapse, annonce }) {
     
-    //const isClicked = useOpenCollapse()
     const [ isClicked, setIsClicked ] = useState(false)
 
     const handleClick = () => {

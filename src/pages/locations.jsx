@@ -1,6 +1,5 @@
 import Banner from '../components/Banner'
 import LocationBanner from '../layouts/LocationBanner'
-//import Informations from '../layouts/Informations'
 import Description from '../layouts/Description'
 import Footer from '../layouts/Footer'
 import useLocation from '../hooks/useLocation.js'
@@ -11,7 +10,7 @@ import Collapses from '../layouts/Collapses'
 function Locations() {  
     
     const annonce = useLocation()
-    document.title = annonce.title
+    document.title =  annonce.title
     
     return (
         <>

@@ -60,6 +60,37 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-weight: bolder;
+    font-weight: 500;
     z-index: 1;
+}
+
+
+@media screen and (max-width: 600px) {
+    .BlocImageAccueil {
+        position: relative;
+        height: 110px;
+        width: 100%;
+        border-radius: 20px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        color: white;
+        margin-top: 40px;
+        background-image: url('../../assets/HomeImage.svg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .TextHomeImage {
+        position: absolute;
+        width: 80%;
+        color: white;
+        font-size: 5vw;
+        top: 50%;
+        left: 5%;
+        transform: translate(0, -50%);
+        text-align: left;
+        font-weight: 500;
+        z-index: 1;
+    }
 }

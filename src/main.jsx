@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/home/'
 import About from './pages/about/'
-//import Header from './layouts/Header'
 import Locations from './pages/locations'
-//import Error404 from './pages/error404'
+import Error404 from './pages/error404'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -15,7 +14,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/location/:id" element={<Locations />} />
-        {/*<Route path="/error404" element={<Error404 />} /> */}
+        <Route path="*" element={<Error404 />} />
+        <Route path="/location/*" element={<Error404 />} />
       </Routes>      
     </Router>
   </React.StrictMode>,
