@@ -4,3 +4,12 @@
     justify-content: space-between;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 480px) {
+    .Collapses {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+}

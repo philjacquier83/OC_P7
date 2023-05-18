@@ -13,6 +13,12 @@ function Description({annonce}) {
                     <div className="Location">{ annonce.location }</div>
                     
                 </div>
+                <div className="LocationTags">{ Tags.map((tag, index) => 
+                    <span key={`${tag}-${index}`}><TagName tags={ tag } /></span> )} 
+                </div>
+                
+            </div>
+            <div className="LocationHostRating">                
                 <div className="LocationHost">
                     <div className="LocationHostName">
                         { annonce.host.name }
@@ -24,11 +30,6 @@ function Description({annonce}) {
                             <div className="NoHostPic"></div>
                         }
                     </div>
-                </div>
-            </div>
-            <div className="LocationTagsRating">                
-                <div className="LocationTags">{ Tags.map((tag, index) => 
-                    <span key={`${tag}-${index}`}><TagName tags={ tag } /></span> )} 
                 </div>
                 <div className="LocationRating"><Stars rating={ annonce.rating }/></div>
             </div>

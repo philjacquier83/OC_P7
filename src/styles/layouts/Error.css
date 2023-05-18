@@ -23,3 +23,14 @@
 .LinkToHome a {
     color: tomato;
 }
+
+@media screen and (max-width: 480px) {
+    .error h1 {
+        font-size: 38vw;
+    }
+
+    .error h3 {
+        font-size: 4vw;
+        font-weight: normal;
+    }
+}

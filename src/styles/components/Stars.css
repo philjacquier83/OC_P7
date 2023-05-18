@@ -13,3 +13,14 @@
 .LocationStar img {
     height: 75%;
 }
+
+@media screen and (max-width: 480px) {
+    .LocationStars {
+        padding: 10px 0;
+    }
+
+    .LocationStar {
+        width: 30px;
+        text-align: left;
+    }
+}

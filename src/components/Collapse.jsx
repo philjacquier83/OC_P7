@@ -24,10 +24,12 @@ function Collapse({ collapse, annonce }) {
                 </div>
             </div>
 
-            { annonce ? 
+            { annonce ? ( !isClicked ?
                 <CollapseDetails isOpen={ isClicked } collapse={ collapse } annonce={ annonce } />
-                :
+                : '' )
+                : ( !isClicked ?
                 <CollapseDetails isOpen={ isClicked } collapse={ collapse } />
+                : '' )
             }
 
         </div>

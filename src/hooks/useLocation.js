@@ -1,9 +1,10 @@
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Annonces from '../assets/logements.json'
 
 function useLocation() {
     const { id } = useParams()
+	const navigate = useNavigate()
     const [ annonce, setAnnonce ] = useState({ 
         id: "",
 		title: "",
@@ -21,8 +22,12 @@ function useLocation() {
     })
 
     useEffect(() => {
-        const a = Annonces.find((elem) => elem.id === id)		
-        setAnnonce(a)
+        const a = Annonces.find((elem) => elem.id === id)	
+		if(!a) {
+			navigate("/error")
+		} else {
+        	setAnnonce(a)
+		}
     }, [id])
 	
 	return annonce

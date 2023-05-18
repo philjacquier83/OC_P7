@@ -8,15 +8,16 @@
     padding: 40px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .CardsBlock {
-        margin-top: 40px;
+        margin-top: 5px;
         border-radius: 25px;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
         width: 100%;
         background: none;
         padding: 0;
-        border: 1px solid red;
     }    
 }
