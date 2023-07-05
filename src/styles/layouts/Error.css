@@ -7,7 +7,7 @@
 
 .error h1 {
     font-size: 280px;
-    margin: 120px 0 40px 0;
+    margin: 60px 0 0 0;
     font-weight: 700;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .LinkToHome {
-    margin: 100px 0;
+    margin: 80px 0;
 }
 
 .LinkToHome a {
@@ -25,6 +25,11 @@
 }
 
 @media screen and (max-width: 480px) {
+    .error {
+        width: 90%;
+        margin: auto;
+    }
+    
     .error h1 {
         font-size: 38vw;
     }
@@ -32,5 +37,9 @@
     .error h3 {
         font-size: 4vw;
         font-weight: normal;
+    }
+
+    .LinkToHome {
+        margin: 100px 0;
     }
 }

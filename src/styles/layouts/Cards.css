@@ -1,11 +1,13 @@
 .CardsBlock {
-    margin-top: 40px;
     background-color: #f7f7f7;
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 40px;
+    width: 94%;
+    max-width: 1280px;
+    padding: 40px 0;
+    margin: 40px auto 0 auto;
 }
 
 @media screen and (max-width: 480px) {
@@ -16,8 +18,39 @@
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
-        width: 100%;
+        width: 90%;
         background: none;
         padding: 0;
+    }    
+}
+
+@media screen and (max-width: 1212px) {
+    .CardsBlock {        
+        margin: 40px auto 0 auto;
+        border-radius: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 86%;
+        background: none;
+        padding: 40px 4%;
+        background-color: #f7f7f7;
+
+    }    
+}
+
+@media screen and (max-width: 744px) {
+    .CardsBlock {        
+        margin: 40px auto 0 auto;
+        border-radius: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 86%;
+        background: none;
+        padding: 40px 4%;
+        background-color: #f7f7f7;
+
     }    
 }

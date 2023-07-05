@@ -3,10 +3,12 @@
     min-height:20vh;
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin: 40px 0 0 0;
     color: white;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 0;
 }
 
 .Footer h3 {

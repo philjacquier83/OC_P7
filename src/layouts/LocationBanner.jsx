@@ -24,7 +24,7 @@ function LocationBanner({annonce}) {
                     </div>
                 }
                 
-                <div class="CarrouselCentral">
+                <div className="CarrouselCentral">
                     <span className="PicCount">{ carrousel }/{ TotalPics }</span>
                 </div>
                 

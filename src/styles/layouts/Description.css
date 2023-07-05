@@ -13,6 +13,10 @@
 .LocationMainBloc {
     display: flex;
     color: tomato;
+    width: 94%;
+    max-width: 1280px;
+    padding: 0 3%;
+    margin: 0 auto;
 }
 
 .LocationInformation {
@@ -88,6 +92,8 @@
         display: flex;
         flex-direction: column;
         color: tomato;
+        width: 90%;
+        margin: auto;
     }
 
     .LocationTags {
