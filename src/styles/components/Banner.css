@@ -61,7 +61,7 @@
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .BlocImageAccueil {
         position: relative;
         height: 100px;

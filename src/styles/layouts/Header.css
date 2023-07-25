@@ -50,7 +50,7 @@ a:hover {
     color: tomato;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) {
     .BlocHeader {
         display: flex;
         flex-direction: row;

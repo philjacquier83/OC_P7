@@ -23,7 +23,9 @@ function Header({menuName}) {
     return (
         <div className="BlocHeader">
             <div className="LogoHeader">
-                <img src={logo} alt={title} />
+                <Link to="/">
+                    <img src={logo} alt={title} />
+                </Link>
             </div>
             
             <div className='BlocMenus'>

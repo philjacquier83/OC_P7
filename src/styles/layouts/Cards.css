@@ -10,7 +10,7 @@
     margin: 40px auto 0 auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .CardsBlock {
         margin-top: 5px;
         border-radius: 25px;
